@@ -83,11 +83,11 @@ class UriResolver implements UriResolverInterface
             !preg_match('|^[^/]+://|u', $baseUri)
         ) {
             if (is_file($baseUri)) {
-                $baseUri = "file_a_$baseUri_$uri://" . realpath($baseUri);
+                $baseUri = 'file://' . realpath($baseUri);
             } elseif (is_dir($baseUri)) {
-                $baseUri = 'file_b://' . realpath($baseUri) . '/';
+                $baseUri = 'file://' . realpath($baseUri) . '/';
             } else {
-                $baseUri = 'file_c://' . getcwd() . '/' . $baseUri;
+                $baseUri = 'file://' . getcwd() . '/' . $baseUri;
             }
         }
 
