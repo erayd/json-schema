@@ -79,11 +79,11 @@ class UriResolver implements UriResolverInterface
         // treat non-uri base as local file path
         if (!is_null($baseUri) && !filter_var($baseUri, \FILTER_VALIDATE_URL)) {
             if (is_file($baseUri)) {
-                $baseUri = 'file://' . realpath($baseUri);
+                $baseUri = 'file_a://' . realpath($baseUri);
             } elseif (is_dir($baseUri)) {
-                $baseUri = 'file://' . realpath($baseUri) . '/';
+                $baseUri = 'file_b://' . realpath($baseUri) . '/';
             } else {
-                $baseUri = 'file://' . getcwd() . '/' . $baseUri;
+                $baseUri = 'file_c://' . getcwd() . '/' . $baseUri;
             }
         }
 
