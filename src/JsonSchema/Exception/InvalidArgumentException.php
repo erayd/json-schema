@@ -10,7 +10,11 @@
 namespace JsonSchema\Exception;
 
 /**
- * Wrapper for the InvalidArgumentException
+ * Invalid arguments found in constraint configuration
+ *
+ * @package justinrainbow\json-schema
+ *
+ * @license MIT
  */
 class InvalidArgumentException extends \InvalidArgumentException implements ExceptionInterface
 {

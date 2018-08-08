@@ -10,7 +10,11 @@
 namespace JsonSchema\Exception;
 
 /**
- * Wrapper for the JsonDecodingException
+ * Wrapper for JSON decoding constants to improve user messaging
+ *
+ * @package justinrainbow\json-schema
+ *
+ * @license MIT
  */
 class JsonDecodingException extends RuntimeException
 {

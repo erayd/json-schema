@@ -10,7 +10,11 @@
 namespace JsonSchema\Exception;
 
 /**
- * Wrapper for the RuntimeException
+ * Wrapper for RuntimeException
+ *
+ * @package justinrainbow\json-schema
+ *
+ * @license MIT
  */
 class RuntimeException extends \RuntimeException implements ExceptionInterface
 {

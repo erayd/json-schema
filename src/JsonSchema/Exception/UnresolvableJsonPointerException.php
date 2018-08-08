@@ -10,9 +10,11 @@
 namespace JsonSchema\Exception;
 
 /**
- * @package JsonSchema\Exception
+ * A pointer provided in the JSON schema is unresolvable
  *
- * @author Joost Nijhuis <jnijhuis81@gmail.com>
+ * @package justinrainbow\json-schema
+ *
+ * @license MIT
  */
 class UnresolvableJsonPointerException extends InvalidArgumentException
 {

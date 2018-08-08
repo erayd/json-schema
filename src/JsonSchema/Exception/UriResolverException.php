@@ -10,7 +10,11 @@
 namespace JsonSchema\Exception;
 
 /**
- * Wrapper for the UriResolverException
+ * A URI provided in the JSON schema is unresolvable
+ *
+ * @package justinrainbow\json-schema
+ *
+ * @license MIT
  */
 class UriResolverException extends RuntimeException
 {

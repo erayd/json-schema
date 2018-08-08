@@ -24,16 +24,35 @@ abstract class Constraint extends BaseConstraint implements ConstraintInterface
 {
     protected $inlineSchemaProperty = '$schema';
 
-    const CHECK_MODE_NONE =             0x00000000;
-    const CHECK_MODE_NORMAL =           0x00000001;
-    const CHECK_MODE_TYPE_CAST =        0x00000002;
-    const CHECK_MODE_COERCE_TYPES =     0x00000004;
-    const CHECK_MODE_APPLY_DEFAULTS =   0x00000008;
-    const CHECK_MODE_EXCEPTIONS =       0x00000010;
-    const CHECK_MODE_DISABLE_FORMAT =   0x00000020;
-    const CHECK_MODE_EARLY_COERCE =     0x00000040;
-    const CHECK_MODE_ONLY_REQUIRED_DEFAULTS   = 0x00000080;
-    const CHECK_MODE_VALIDATE_SCHEMA =  0x00000100;
+    /** Bitwise value used to specify no constraint validation options */
+    const CHECK_MODE_NONE = 0x00000000;
+
+    /** Bitwise value used to specify normal constraint validation options */
+    const CHECK_MODE_NORMAL = 0x00000001;
+
+    /** Bitwise value used to specify the value typecasting constraint validation option */
+    const CHECK_MODE_TYPE_CAST = 0x00000002;
+
+    /** Bitwise value used to specify the value type coercion constraint validation option */
+    const CHECK_MODE_COERCE_TYPES = 0x00000004;
+
+    /** Bitwise value used to specify the default value constraint validation option */
+    const CHECK_MODE_APPLY_DEFAULTS = 0x00000008;
+
+    /** Bitwise value used to specify the exception handling constraint validation option */
+    const CHECK_MODE_EXCEPTIONS = 0x00000010;
+
+    /** Bitwise value used to specify the disable format constraint validation option */
+    const CHECK_MODE_DISABLE_FORMAT = 0x00000020;
+
+    /** Bitwise value used to specify the early value type coercion constraint validation option */
+    const CHECK_MODE_EARLY_COERCE = 0x00000040;
+
+    /** Bitwise value used to specify the default value only for required properties constraint validation option */
+    const CHECK_MODE_ONLY_REQUIRED_DEFAULTS = 0x00000080;
+
+    /** Bitwise value used to specify the schema validation constraint validation option */
+    const CHECK_MODE_VALIDATE_SCHEMA = 0x00000100;
 
     /**
      * Bubble down the path
