@@ -10,7 +10,11 @@
 namespace JsonSchema\Exception;
 
 /**
- * Wrapper for the InvalidSchemaMediaType
+ * Invalid JSON schema media type provided
+ *
+ * @package justinrainbow\json-schema
+ *
+ * @license MIT
  */
 class InvalidSchemaMediaTypeException extends RuntimeException
 {

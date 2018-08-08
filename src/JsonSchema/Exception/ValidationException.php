@@ -9,6 +9,13 @@
 
 namespace JsonSchema\Exception;
 
+/**
+ * A JSON schema validation error detailing pointer and constraint information
+ *
+ * @package justinrainbow\json-schema
+ *
+ * @license MIT
+ */
 class ValidationException extends RuntimeException
 {
 }
