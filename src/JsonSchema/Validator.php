@@ -25,12 +25,20 @@ use JsonSchema\SchemaStorage;
  */
 class Validator extends BaseConstraint
 {
+    /** Media type for JSON Schema */
     const SCHEMA_MEDIA_TYPE = 'application/schema+json';
 
-    const ERROR_NONE                    = 0x00000000;
-    const ERROR_ALL                     = 0xFFFFFFFF;
-    const ERROR_DOCUMENT_VALIDATION     = 0x00000001;
-    const ERROR_SCHEMA_VALIDATION       = 0x00000002;
+    /** Bitwise value used to specify no error context */
+    const ERROR_NONE = 0x00000000;
+
+    /** Bitwise value used to specify all error contexts */
+    const ERROR_ALL = 0xFFFFFFFF;
+
+    /** Bitwise value used to specify JSON document validation error context */
+    const ERROR_DOCUMENT_VALIDATION = 0x00000001;
+
+    /** Bitwise value used to specify JSON schema validation error context */
+    const ERROR_SCHEMA_VALIDATION = 0x00000002;
 
     /**
      * Validates the given data against the schema and returns an object containing the results.
